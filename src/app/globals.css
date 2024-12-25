@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --color-text: #f4dbd6;
+  --color-error: #eb6f92;
+  --color-paper: #2e2a31;
+  --color-primary: #a6adc8;
+  --color-background: #1e1e2e;
+  --color-primary-contrast: #f4e0dc;
+}
+
+/* usar: "document.documentElement.setAttribute('light', '')" para setar o tema branco no site*/
+html[light] {
+  --color-text: #4c4f69;
+  --color-error: #d20f39;
+  --color-paper: #eff1f5;
+  --color-primary: #7287fd;
+  --color-background: #faf4ed;
+  --color-primary-contrast: #dc8a78;
+}
+
+html,
+body {
+  @apply bg-background text-text w-screen h-screen
+}

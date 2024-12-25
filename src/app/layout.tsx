@@ -1,20 +1,18 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Nunito } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const nunito = Nunito({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Plataforma de curso",
-  description: "A melhor plataforma de cursos de todos os tempos.",
+  title: "Taken Coders",
+  description: "A melhor plataforma de cursos GRATUITOS de todos os tempos.",
 };
 
-interface IRootLayout extends Readonly< {children: React.ReactNode } > { }
-
-export default function RootLayout ({ children }: IRootLayout) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="pt-Br">
-      <body className={inter.className}>{children}</body>
+    <html lang="pt-BR">
+      <body className={nunito.className}>{children}</body>
     </html>
   );
 }

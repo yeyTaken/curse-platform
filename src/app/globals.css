@@ -3,25 +3,29 @@
 @tailwind utilities;
 
 :root {
-  --color-text: #f4dbd6;
-  --color-error: #eb6f92;
-  --color-paper: #2e2a31;
-  --color-primary: #a6adc8;
-  --color-background: #1e1e2e;
-  --color-primary-contrast: #f4e0dc;
+  --color-text: #e8e8e8;
+  --color-error: #ff6557;
+  --color-paper: #2c2c2c;
+  --color-primary: #842184;
+  --color-background: #1e1e1e;
+  --color-primary-contrast: #5e205d;
 }
 
 /* usar: "document.documentElement.setAttribute('light', '')" para setar o tema branco no site*/
 html[light] {
-  --color-text: #4c4f69;
-  --color-error: #d20f39;
-  --color-paper: #eff1f5;
-  --color-primary: #7287fd;
-  --color-background: #faf4ed;
-  --color-primary-contrast: #dc8a78;
+  --color-text: #333333;
+  --color-error: #ff6557;
+  --color-paper: #fdfdfd;
+  --color-primary: #842184;
+  --color-background: #f9f9f9;
+  --color-primary-contrast: #5e205d;
 }
 
 html,
 body {
-  @apply bg-background text-text w-screen h-screen
+  @apply bg-background text-text w-screen h-screen underline-offset-4;
+}
+
+a {
+  @apply hover:underline active:opacity-50 transition-opacity
 }

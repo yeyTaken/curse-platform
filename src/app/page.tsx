@@ -1,4 +1,4 @@
-export default function homePage() {
+export default function Home() {
   return (
     <main>
       Home
